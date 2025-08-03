@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo TypeScript.</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1>✅My To-Do-List</h1>
+      <p>TABUKE EZEKIEL.</p>
+    </nav>
+    <main>
+      <ul>
+        <li class="head-table">
+          <p style="text-align: center; width: 20%">Task Title</p>
+          <p
+            style="
+              width: 55%;
+              text-align: center;
+              border-left: 2px solid #fffb00;
+              border-right: 2px solid #fffb00;
+            "
+          >
+            Details
+          </p>
+          <p
+            style="
+              border-right: 2px solid #fffb00;
+              text-align: center;
+              width: 15%;
+            "
+          >
+            Tag
+          </p>
+          <p style="text-align: center; max-width: 3%">Done</p>
+        </li>
+      </ul>
+      <form>
+        <div>
+          <h3 style="text-align: center; margin-block: 0">New Task</h3>
+          <label>Task Title: </label>
+          <input
+            name="title"
+            id="title"
+            type="text"
+            placeholder="Task Title"
+            minlength="3"
+            onchange="onChangeFunc('title')"
+          />
+        </div>
+        <div>
+          <label>Details: </label>
+          <textarea
+            name="detail"
+            id="detail"
+            cols="25"
+            rows="2"
+            placeholder="Task Details..."
+            onchange="onChangeFunc('detail')"
+          ></textarea>
+        </div>
+        <div class="tag">
+          <label>Tag: </label>
+          <label
+            ><input
+              type="radio"
+              name="tag"
+              value="important"
+              onchange="onTagChange(this)"
+            />
+            Important</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="tag"
+              value="optional"
+              onchange="onTagChange(this)"
+            />
+            Optional</label
+          >
+        </div>
+        <button type="button" class="create" onclick="createTask()">
+          Create Task
+        </button>
+      </form>
+      <div class="loading"></div>
+    </main>
+    <button class="add-task" onclick="addTask()">Add Task</button>
+  </body>
+</html>
