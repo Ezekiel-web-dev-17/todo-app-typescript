@@ -2,7 +2,7 @@
 
 A simple yet powerful Todo application built using **TypeScript**, **HTML**, and **CSS** — designed to keep your daily tasks organized, manageable, and minimal for only desktop devices.
 
-![Todo App Screenshot](./screenshot.png) <!-- Optional: Add a real screenshot -->
+![Todo App Screenshot]([./screenshot.png](https://todo-app-typescript-black.vercel.app/)) <!-- Optional: Add a real screenshot -->
 
 ---
 
@@ -36,7 +36,8 @@ A simple yet powerful Todo application built using **TypeScript**, **HTML**, and
 ├── tsconfig.json
 └── README.md
 
-
+## DEMO
+https://todo-app-typescript-black.vercel.app/
 ---
 
 ## 🛠️ Getting Started
